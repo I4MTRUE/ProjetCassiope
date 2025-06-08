@@ -72,7 +72,7 @@ N'hésitez pas à consulter chaque script pour plus de détails sur leur fonctio
 ### Pipeline du Projet
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Scraping ex :nyt_scraper.py] --> B[Raw CSV ex : nyt_articles.csv]
     B --> C[Preprocessing w/ csv_edit.py]
     C --> D[Labeling w/ openai_label.py]
